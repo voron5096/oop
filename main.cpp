@@ -1,10 +1,17 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <iostream>
-#include "MyClass.h";
-using namespace std;
+#include "object.h";
 
+using namespace std;
 int main() {
-  MyClass obj;
+  Object object;
   return(0);
+}
+
+Object::Object() {
+  cout << "Constructor" << endl;
+}
+
+Object::~Object() {
+  cout << "Destructor";
 }
