@@ -1,5 +1,5 @@
 # compile = "make -s"
-run = "clang++ 222.cpp && ./a.out"
+run = "clang++ 311old.cpp && ./a.out"
 entrypoint = "main.cpp"
 hidden = ["main", "**/*.out", "**/*.d", ".ccls-cache", "Makefile"]
 
