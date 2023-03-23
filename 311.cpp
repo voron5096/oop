@@ -22,32 +22,13 @@ int main() {
   int a = obj1 -> n;
   obj1 = obj2;
   
-  for (int i = 1; i <= a; i++) {
+  for (int i = 1; i <= a; i++) { // засунуть внутрь принта? 
     if (i != a)
       cout << temp[i-1] << " ";
     else
       cout << temp[i-1];
   }
-  
   cout << endl;
-  obj1 -> print();
+  obj1 -> print(); // вызов первого объекта 
   return(0);
-}
-
-
-MyClass::MyClass(int size) {
-  n = size;
-  arr = new int[size];
-  for (int i = 0; i < size; i++) {
-    arr[i] = size;
-  }
-}
-
-void MyClass::print() {
-  for(int i = 1; i <= n; i++) {
-    if (i != n)
-      cout << arr[i-1] << " ";
-    else
-      cout << arr[i-1];
-  }
 }
