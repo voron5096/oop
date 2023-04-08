@@ -1,6 +1,7 @@
 #include <iostream>
+#include <set>
 using namespace std;
-#include "311.h"
+#include "312.h"
 
 int main() {
   int size;
@@ -9,7 +10,8 @@ int main() {
   if (size <= 4) {
     cout << size << "?";
     return 0;
-  }  
+  }
+
   MyClass *obj1 = new MyClass(size);
   
   cin >> size;
